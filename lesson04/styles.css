@@ -1,0 +1,309 @@
+/* Global box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Includes padding and border in an element's total width and height */
+}
+
+/* Remove the browser's default page margin */
+body {
+  margin: 0; /* Removes the default outer spacing around the page */
+  font-family: "Poppins", sans-serif; /* Sets the main font for the page */
+  line-height: 1.6; /* Improves readability by adding comfortable line spacing */
+}
+
+/* Navigation bar */
+nav {
+  background-color: #90c7e3; /* Sets a light blue background for the navigation area */
+  font-weight: 700; /* Makes the navigation text bold */
+}
+
+/* Unordered lists */
+ul {
+  list-style: none; /* Removes default bullet points */
+  margin: 0; /* Removes default list margin */
+  padding: 0; /* Removes default list padding */
+}
+
+/* Links */
+a {
+  color: #333; /* Sets the default link color to dark gray */
+  text-decoration: none; /* Removes the default underline */
+}
+
+/* Link hover state */
+a:hover {
+  color: #fff; /* Changes the link color to white on hover */
+}
+
+/* Level-two headings */
+h2 {
+  margin-block-end: 1.25rem; /* Adds space below the heading */
+}
+
+/* Paragraphs */
+p {
+  margin-block: 1.25rem; /* Adds vertical spacing above and below paragraphs */
+}
+
+/* Footer */
+footer {
+  font-size: 0.75rem; /* Makes the footer text smaller */
+  text-align: center; /* Centers the footer text */
+}
+
+/* Main page container */
+.container {
+  width: 100%; /* Allows the container to fill the available width */
+  max-width: 75rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* Responsive Design */
+
+/* Hero section Layout and background styling  */
+.hero-image {
+  display: flex; /*uses flexbox to position content inside the heror */
+  justify-content: center; /* Centers content horizontally*/
+  align-items: center; /* Centers content vertically */
+  height: 50vh; /* sets the hero heigh to 50% of the viewport height */
+  background-size: cover; /* Scales the background image to fill the container  */
+  background-position: center; /* Centers the backgrond image */
+  color: #fff; /* Sets text color to white for contrast */
+  text-align: center; /* Centers text inside the hero section */
+}
+/* Page-specific hero backgroun images */
+.hero-home {
+  background-image: url("images/coast.jpg"); /* Home page hero images */
+}
+.hero-activities {
+  background-image: url("images/trail.jpg"); /* Activities page hero image */
+}
+.hero-yurt {
+  background-image: url(images/yurt.jpg); /* Yurts page hero image  */
+}
+.hero-reservations {
+  background-image: url(images/reservations.jpg); /* Yurts page hero image  */
+}
+/* Hero heading (main title inside the hero section  */
+.hero-text h1 {
+  font-family:
+    "Style Script", cursive; /* Uses a decorative scrilp font for a stylized heading */
+  font-size: 3rem; /* Makes the heading large and prominent */
+  text-shadow: 0.3125rem 0.3125rem 0.625rem rgb(0 0 0 / 1); /* adds a dark shadow to improve contrast and readability over the 
+  background image   */
+}
+.hero-text p {
+  font-size: 1.5rem; /* Increase the paragraph size to make it more readable and visually balanced with the large heading */
+}
+
+.hero-text-btn {
+  display: inline-block; /*  Allows padding and margin to behave like a button  */
+  background-color: coral; /* Sets the button background color */
+  color: #fff; /* Makes the button text white */
+  padding: 0.625rem 1.25rem; /* Adds space inside the button (top/bottom, left/right */
+  border-radius: 0.625rem; /* Round the corners of the button  */
+  box-shadow: 0 0.25rem 0.625rem rgb(0, 0, 0 /0.2); /* Adds a subtle shadow for depth */
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease; /* Smoothly animates color and shadow changes on hover */
+}
+/* Hover state for the hero button */
+.hero-text-btn:hover {
+  background-color: #90c7e3; /* Changes the btton color when the user hovers over it  */
+  box-shadow: 0 0.5rem 1.25rem rgb(0 0 0 / 0.3); /* Increases the shadow to create a lifted effect on hover */
+}
+/* Main navigation menu */
+.main-menu {
+  display: flex; /*  flexbod to lay out the menu items in a row*/
+  justify-content: space-evenly; /* Evenly distributes space between and around the menu */
+  gap: 1rem; /* Adds consistend spacing between each   menu item */
+  flex-wrap: wrap; /* Allows menu items to wrap to the next line on smaller screens */
+}
+/* Navigation links */
+.main-menu a {
+  display: inline-block; /* Allows padding to the applied and increases clikable area */
+  padding: 0.75rem 0.5rem; /* Adds space around each lilnk for better usability */
+  font-size: 1.25rem; /* Increases the text size for readability */
+}
+/* Main layhout */
+main {
+  padding-block: 1.25rem; /* Adds vertical spacing above and below the <main> content */
+}
+/* Flexbox layout for card-base pages (Activities and Yurts */
+.cards-layout {
+  display: flex; /* Enbles Flexbox layout */
+  flex-wrap: wrap; /* Allows ca rds to move t the next row on smaller screens */
+  gap: 2.5rem; /* Adds consistent spacing between cards  */
+  padding-block: 1.25rem; /* Adds psace a;bove and below the card layout */
+}
+/* Cards */
+.card {
+  flex: 1 1 18.75rem; /* Allows cards to g row and shrink with a preferred width of 300px */
+  padding: 1rem; /* Adds inner spacing  */
+  border-color: #fff; /* Gives each card a white background */
+  border-radius: 0.5rem; /* Softens the card corners */
+}
+
+/* Card heading (title inside. each card) */
+.card h2 {
+  margin-top: 0; /* Removes extra space above the heading */
+  padding: 0.625rem; /* Adds inner spacing  */
+  background-color: #333; /* Gives the heading a dark background */
+  color: #fff; /* Makes the heading text white */
+  font-size: 1.3rem; /* Adjusts heading size */
+}
+/* Highlighted resort text  */
+.resort {
+  color: #5c7fa3; /* Uses a muted blue accent color */
+  font-weight: 700;
+  /* Makes the text bold */
+}
+/* Contack (address)box */
+.contact {
+  margin-top: 2.5rem; /* Adds space above the contact section */
+  border: 1px solid #000; /* Creates a thin border around the contact box */
+  padding: 0.625rem; /* Adds space inside the box  */
+  display: inline-block; /* Keeps the box only as wide as its content */
+  font-style: normal; /* Removes the default italic style of the <address> element */
+}
+
+.contact p {
+  margin: 0; /* Removes extra spacing between contact lines */
+  line-height: 1.3; /* Keeps the contact information compact but readable */
+}
+/* Reservation from container */
+form {
+  max-width: 31.25rem; /* Limits the form width (~500px) for better readability */
+  margin: 1.25rem auto; /* Centers the form horizontally and adds space above the below */
+  padding: 1.25rem; /* Adds space inside the form */
+  background-color: #f9f9f9; /* Applies a light background for contrast */
+  border-radius: 0.625rem; /* Rounds the corners of the form */
+  box-shadow: 0 0.25rem 0.625rem rgb(0 0 0 / 0.1); /* Adds a subtle shadow for depth */
+}
+
+/* Grjouops related forms fields  */
+fieldset {
+  border: 0; /* Removes the default fieldset border */
+  margin-bottom: 1.25rem; /* Adds space blow each group of form fields */
+  padding: 0; /* Removes default inner spacing */
+}
+/* The legend helps group related form fields and tells the user what the section is about */
+legend {
+  margin-bottom: 0.625rem; /* Adds space below the legend*/
+  font-size: 1.2rem; /* Makes the legend slightlhy larger */
+  font-weight: 700; /* Makes the legend bold */
+  color: #333; /* Sets the legend color */
+}
+/* Form labels */
+
+label {
+  display: block; /* Places each label on its own line above the input */
+  font-weight: 700; /* Makes the label text bold */
+  margin-bottom: 0.3125rem; /* Adds a small space below the label */
+  color: #333;
+}
+/* Form inputs and textarea fields */
+
+input,
+textarea {
+  width: 100%; /* Makes form fields span the full width of their container */
+  padding: 0.625rem; /* Adds space inside the input/textarea for readability */
+  margin-bottom: 0.9375rem; /* Adds space below each field to separate them */
+  border: 1px solid #ccc; /* Applies a light gray border */
+  border-radius: 0.3125rem; /* Slightly rounds the corners */
+  font: inherit; /* Inherits the font family and size from the parent element */
+}
+
+textarea {
+  min-height: 5rem; /* Sets a comfortable minimum height */
+  resize: vertical; /* Allows vertical resizing only */
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff; /* Highlights the active form field */
+  outline: none; /* Removes the default outline */
+  box-shadow: 0 0 0 0.3125rem rgb(0 123 255 / 0.5); /* Adds a visible focus effect */
+}
+/* Form submit button */
+
+button {
+  display: block; /* Allows margin auto to work */
+  margin: 1rem auto; /* Centers the button horizontally */
+  background-color: #007bff; /* Sets the button background */
+  color: #fff; /* Makes the button text white for contrast */
+  border: none; /* Removes the default button border */
+  padding: 0.625rem 0.9375rem; /* Adds space inside the button */
+  border-radius: 0.3125rem; /* Slightly rounds the corners */
+  font: inherit; /* Matches the font to the rest of the form */
+  cursor: pointer; /* Changes the cursor to a pointer */
+  transition: background-color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+/* Hover state for the submit button */
+button:hover {
+  background-color: #0056b3; /* Darkens the button color on hover */
+}
+
+/* Accessibility: reduces motion for users who prefer minimal animation */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto; /* Disables smooth scrolling / animations */
+  }
+
+  .hero-text-btn button {
+    transition: none; /* Removes animation effects from hero button */
+  }
+}
+/* Responsive Design */
+
+@media (max-width: 37.5rem) {
+  .main-menu {
+    flex-direction: column; /* Stacks navigation links vertically */
+    justify-content: center; /* Centers the group inside the nav */
+    align-items: stretch; /* Makes each menu item stretch across the available width */
+    gap: 0; /* Removes extra space between links */
+  }
+
+  .main-menu li {
+    width: 100%; /* Makes each list item span the full width */
+    text-align: center; /* Centers the link text */
+    border-bottom: 1px solid #333; /* Adds a divider line between links */
+  }
+
+  .main-menu li:last-child {
+    border-bottom: none; /* Removes the border from the last item */
+  }
+
+  .main-menu a {
+    display: block; /* Makes the entire row clickable */
+    padding: 0.5rem; /* Adds space inside each link */
+  }
+
+  .hero-text {
+    display: none; /* Hides hero text on small screens */
+  }
+
+  form {
+    width: 90%; /* Reduces the form width on small screens */
+    padding: 0.9375rem; /* Reduces inner spacing on small screens */
+  }
+}
+/* Responsive styles for tablets and smaller screens */
+@media (max-width: 48rem) {
+  .hero-text h1 {
+    font-size: 2.5rem; /* Reduces the heading size for better fit on smaller screens */
+    font-weight: 400; /* Uses a lighter weight for improved readability */
+  }
+
+  .hero-text p {
+    font-size: 1.2rem; /* Decreases paragraph size to match smaller layouts */
+  }
+
+  .hero-text-btn {
+    font-size: 1rem; /* Reduces button text size */
+    padding: 0.5rem 1rem; /* Reduces padding to keep the button proportional */
+  }
+}
