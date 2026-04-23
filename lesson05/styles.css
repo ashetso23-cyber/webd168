@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root typography - sets the foundation for baseline alignment */
+html {
+  /* Fluid typography: scales smoothly between devices (modern best practice) */
+  font-size: clamp(100%, 4vw, 112%);
+  line-height: 1.6;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Main layout using Flexbox for side-by-side alignment */
+section {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Article (main content) */
+article {
+  flex: 2;
+}
+
+/* Aside (poem sidebar) */
+aside {
+  flex: 1;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+aside p {
+  margin-bottom: 1rem;
+}
+
+aside p:last-child {
+  margin-bottom: 0;
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1.5rem;
+  border-radius: 8px; /* small polish for better look */
+}
+
+/* Headings - critical for baseline alignment */
+h1 {
+  margin-bottom: 0.5rem; /* Key fix: reduces default heading margin */
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* ====================== MEDIA QUERIES ====================== */
+
+/* Tablets and smaller - stack vertically */
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+
+  aside {
+    order: 2; /* Move poem to bottom */
+  }
+
+  article {
+    order: 1;
+  }
+}
+
+/* Extra small screens - adjust font sizes */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 0.95rem;
+  }
+}
