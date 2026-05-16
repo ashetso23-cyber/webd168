@@ -1,0 +1,44 @@
+/* ========================================
+   Custom Styles (Student Editable)
+   ======================================== */
+
+/* General Page Styles */
+body {
+  scroll-behavior: smooth;
+}
+
+/* Header Section */
+header {
+  padding: 6rem 0;
+}
+
+/* Section Spacing */
+section {
+  padding: 4rem 0;
+}
+
+/* Table Caption Styling */
+caption {
+  caption-side: top;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Optional: Customize Header Colors */
+header.bg-secondary {
+  /* Students can change this color */
+  background-color: #6c757d !important;
+}
+
+/* Optional: Star Rating Hover Effect */
+.rating i {
+  margin-right: 2px;
+}
+
+/* Section Spacing on Small Devices */
+@media (max-width: 768px) {
+  section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
