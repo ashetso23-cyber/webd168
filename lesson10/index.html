@@ -185,72 +185,78 @@
       </div>
     </section>
 
-    <!-- CONTACT FORM -->
-    <section id="contact" class="py-5">
-      <div class="container px-4">
+  <!-- CONTACT SECTION -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
         <h2 class="text-center mb-5">Contact Me</h2>
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <form>
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <label class="form-label">First Name</label>
-                  <input type="text" class="form-control" required />
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">Last Name</label>
-                  <input type="text" class="form-control" required />
-                </div>
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Email Address</label>
-                <input type="email" class="form-control" required />
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Subject</label>
-                <select class="form-select">
-                  <option selected>Select One</option>
-                  <option>Job Opportunity</option>
-                  <option>Project Inquiry</option>
-                  <option>Collaboration</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Message</label>
-                <textarea
-                  class="form-control"
-                  rows="5"
-                  placeholder="Write your message here..."
-                  required
-                ></textarea>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-lg px-5">
-                  Send Message
-                </button>
-              </div>
-            </form>
+        
+        <form>
+          <div class="row">
+            <!-- First Name -->
+            <div class="col-md-6 mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" required>
+            </div>
+            <!-- Last Name -->
+            <div class="col-md-6 mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" required>
+            </div>
           </div>
-        </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+
+          <!-- Subject -->
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <select class="form-select" id="subject" required>
+              <option value="">Select One</option>
+              <option value="Job Opportunity">Job Opportunity</option>
+              <option value="Project Inquiry">Project Inquiry</option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg px-5">
+              Send Message
+            </button>
+          </div>
+        </form>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- FOOTER -->
     <footer class="py-5 bg-dark text-white text-center">
       <div class="container">
         <!-- Social Media -->
         <div class="mb-4">
-          <a href="#" class="text-white mx-3 fs-3"
+          <a href="#" aria-label="Visit my github profile"class="text-white mx-3 fs-3"
             ><i class="bi bi-github"></i
           ></a>
-          <a href="#" class="text-white mx-3 fs-3"
+          <a href="#"aria-label="Visit my LinkedIn profile" class="text-white mx-3 fs-3"
             ><i class="bi bi-linkedin"></i
           ></a>
-          <a href="#" class="text-white mx-3 fs-3"
+          <a href="#" aria-label="Visit my instagram profile" class="text-white mx-3 fs-3"
             ><i class="bi bi-instagram"></i
           ></a>
-          <a href="#" class="text-white mx-3 fs-3"
+          <a href="#" aria-label="Visit my youtube profile" class="text-white mx-3 fs-3"
             ><i class="bi bi-youtube"></i
           ></a>
         </div>
