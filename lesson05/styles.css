@@ -52,9 +52,10 @@ aside p:last-child {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
-  margin-bottom: 1.5rem;
-  border-radius: 8px; /* small polish for better look */
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  float: left;
+  padding-right: 1rem;
 }
 
 /* Headings - critical for baseline alignment */
