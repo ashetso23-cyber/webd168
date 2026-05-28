@@ -59,7 +59,3 @@ header.bg-secondary {
   padding-top: 5rem;
 }
 
-/* Optional: Make the profile image nicer */
-.hero-bg img {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
