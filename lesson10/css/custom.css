@@ -29,19 +29,6 @@ header.bg-secondary {
   /* Students can change this color */
   background-color: #6c757d !important;
 }
-
-/* Optional: Star Rating Hover Effect */
-.rating i {
-  margin-right: 2px;
-}
-
-/* Section Spacing on Small Devices */
-@media (max-width: 768px) {
-  section {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
 //* HERO BACKGROUND - Moved from inline styles */
 .hero-bg {
   background: 
@@ -57,6 +44,19 @@ header.bg-secondary {
 .hero-bg {
   padding-top: 5rem;
 }
+/* Optional: Star Rating Hover Effect */
+.rating i {
+  margin-right: 2px;
+}
+
+/* Section Spacing on Small Devices */
+@media (max-width: 768px) {
+  section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
 
 
 
