@@ -53,9 +53,10 @@ header.bg-secondary {
   display: flex;
   align-items: center;
 }
-
-/* Extra spacing because of fixed navbar */
+/* Extra top padding for fixed navbar */
 .hero-bg {
   padding-top: 5rem;
 }
+
+
 
