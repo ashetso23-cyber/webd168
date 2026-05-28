@@ -42,14 +42,24 @@ header.bg-secondary {
     padding-bottom: 1rem;
   }
 }
-/* Hero Background - Moved from inline styles */
+//* HERO BACKGROUND - Moved from inline styles */
 .hero-bg {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
-    url("../images/fruit.png");
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url('../images/fruit.png');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
   display: flex;
   align-items: center;
+}
+
+/* Extra spacing because of fixed navbar */
+.hero-bg {
+  padding-top: 5rem;
+}
+
+/* Optional: Make the profile image nicer */
+.hero-bg img {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
